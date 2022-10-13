@@ -1,4 +1,5 @@
-import { sum } from "./modules/sum";
+import './styles/index.scss'
+import loginTemplate from './modules/login/login'
 
-const root = document.querySelector('#root')
-root.textContent = sum(6,-1).toString()
+const login = document.querySelector('#login')
+login.innerHTML = loginTemplate({})

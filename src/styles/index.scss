@@ -1,0 +1,67 @@
+@import "normalize.css";
+@import "./fonts/montserrat/style.css";
+:root {
+    --main-color: #5865f2;
+    --main-color-light: #dbdfe0;
+    --main-color-bg: #e7faff;
+    --main-text-color: #43636d;
+  }
+
+
+html {
+  font-size: 16px;
+  font-family: Montserrat, Arial, sans-serif;
+  background-color: var(--main-color-bg);
+  color: var(--main-text-color);
+}
+button {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 40px;
+    padding: 6px 16px;
+    white-space: nowrap;
+    color: var(--main-color-light);
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    &:hover {
+        box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+input[type=text], input[type=password]{
+    padding: 10px;
+    height: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: border-color .2s ease-in-out;
+    outline: 0;
+    font-weight: 400;
+    border: none;
+    border-bottom: solid  var(--main-color) 2px;
+    background-color: inherit;
+}
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+.paper {
+  padding: 1rem 2rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+}
+

@@ -2,13 +2,26 @@
   "name": "yandex-practicum",
   "version": "1.0.0",
   "description": "",
+  "targets": {
+    "global": {
+      "context": "browser"
+    }
+
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">6.0.0"
+  },
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel src/pages/index.html" ,
+    "build": "parcel build src/pages/index.html" 
   },
   "author": "Vladimir Avakumov",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.7.0"
-  }
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "parcel-transformer-hbs": "^1.0.4"
+  },
+  "dependencies": {}
 }
